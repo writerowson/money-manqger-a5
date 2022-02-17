@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Money Manager</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <h1>Assignment 05</h1>
+    <main class="container mt-5 mb-5">
+        <h1 class="text-center text-primary mb-5">Money Manager</h1>
+        <div class="row d-flex m-auto">
+            <div class="col-lg-6 col-sm-12 d-flex ">
+                <img src="images/income.png" alt="">
+            </div>
+            <div class="col-lg-6 col-sm-12  border bg-secondary bg-opacity-10 ">
+                <h5 class="text-center mt-3">Income</h5>
+                <div class=" col-lg-6 d-flex m-auto ">
+                    <p class="m-auto">Income : </p>
+                    <input type="text">
+                </div>
+                <h5 class="text-center">Expenses</h5>
+                <div class=" row col-lg-6 d-flex m-auto ">
+                    <div class=" d-flex mb-2 ">
+                        <p class="m-auto">Food : </p>
+                        <input type="text">
+                    </div>
+                    <div class="  d-flex mb-2 ">
+                        <p class="m-auto">Rent : </p>
+                        <input type="text">
+                    </div>
+                    <div class="  d-flex mb-2 ">
+                        <p class="m-auto">Cloth : </p>
+                        <input type="text">
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm px-5  ">Calculate</button>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <h5 class="text-center">Tolal Expenses</h5>
+                    <h5 class="text-center">Balance</h5>
+                    <div class="d-flex  align-items-center  ">
+                        <p class="col-lg-1 ">Save : </p>
+                        <input class="col-lg-5" type="text">
+                        <p class="col-lg-1">%</p>
+                        <button type="button" class="col-lg-5 btn btn-primary btn-sm px-5  ">Calculate</button>
+                    </div>
+                    <h5 class="text-center">Saving Amount: </h5>
+                    <h5 class="text-center">Remaining Balance:</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
