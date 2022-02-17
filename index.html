@@ -22,32 +22,32 @@
                 <h5 class="text-center mt-3">Income</h5>
                 <div class=" col-lg-6 d-flex m-auto ">
                     <p class="m-auto">Income : </p>
-                    <input type="text">
+                    <input id="income-amount" type="text">
                 </div>
                 <h5 class="text-center">Expenses</h5>
                 <div class=" row col-lg-6 d-flex m-auto ">
-                    <div class=" d-flex mb-2 ">
+                    <div class=" d-flex mb-2  ">
                         <p class="m-auto">Food : </p>
-                        <input type="text">
+                        <input id="food-prices" type="text">
                     </div>
                     <div class="  d-flex mb-2 ">
                         <p class="m-auto">Rent : </p>
-                        <input type="text">
+                        <input id="rent-prices" type="text">
                     </div>
                     <div class="  d-flex mb-2 ">
                         <p class="m-auto">Cloth : </p>
-                        <input type="text">
+                        <input id="cloth-prices" type="text">
                     </div>
-                    <button type="button" class="btn btn-primary btn-sm px-5  ">Calculate</button>
+                    <button onclick="claculation()" type="button" class="btn btn-primary btn-sm px-5">Calculate</button>
                 </div>
                 <div class="row mt-3 mb-3">
-                    <h5 class="text-center">Tolal Expenses</h5>
-                    <h5 class="text-center">Balance</h5>
+                    <h5 class="text-center">Tolal Expenses : $<span id="total-expenses"></span> </h5>
+                    <h5 class="text-center">Balance : $<span id="balance"></span> </h5>
                     <div class="d-flex  align-items-center  ">
                         <p class="col-lg-1 ">Save : </p>
                         <input class="col-lg-5" type="text">
                         <p class="col-lg-1">%</p>
-                        <button type="button" class="col-lg-5 btn btn-primary btn-sm px-5  ">Calculate</button>
+                        <button type="button" class="col-lg-5 btn btn-primary btn-sm px-5  ">Save</button>
                     </div>
                     <h5 class="text-center">Saving Amount: </h5>
                     <h5 class="text-center">Remaining Balance:</h5>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </main>
-    <script src="js/script.js"></script>
+    <script src="new.js"></script>
 </body>
 
 </html>
