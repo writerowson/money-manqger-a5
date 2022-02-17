@@ -14,12 +14,16 @@ function sum(food, rent, cloth) {
     return total
 }
 function updateBalance(balance1, balance2) {
-    if ((isNaN(balance1) == 'string' && isNaN(balance2) <= '0')) {
+    if (isNaN(balance1) == 'string') {
         alert("please input a valid number")
         location.reload();
     }
+    else if (isNaN(balance2 >= balance1)) {
+        alert("Please Calculate again")
+        location.reload();
+    }
     // else {
-    //     alert("Please Calculate again")
+    //     alert("error")
     //     location.reload();
     // }
     let result = Number(balance1) - Number(balance2)
