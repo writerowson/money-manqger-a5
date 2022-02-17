@@ -10,17 +10,20 @@ let totalExpenses = document.getElementById("total-expenses")
 let balanceOutput = document.getElementById("balance")
 
 function sum(food, rent, cloth) {
-    // if (typeof (food, rent, cloth) >= '0') {
-    //     return "please input a positive number"
-    // }
     let total = Number(food) + Number(rent) + Number(cloth);
     return total
 }
-function updateBalance(income, expense) {
-    let result = Number(income) - Number(expense)
-    return result
+
+function updateBalance(balancee1, balancee2) {
+    // if (typeof income != 'number' && typeof expense >= '0') {
+    //     return "please input a valid number"
+    // }
+    let result = Number(balancee1) - Number(balancee2)
+    return result;
 }
-function claculation() {
+
+function calculation() {
+
     let sumOfExpenses = sum(foodExpenses.value, rentExpenses.value, clothExpenses.value)
     totalExpenses.innerText = sumOfExpenses;
 
@@ -40,6 +43,7 @@ function saving(incomeAmount, savingPercentage) {
 }
 function remainingBalance(balance1, balance2) {
     let remainBalance = balance1 - balance2
+    // let remainBalance = Number(balance1) - Number(balance2)
     return remainBalance
 }
 
