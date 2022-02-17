@@ -45,12 +45,13 @@
                     <h5 class="text-center">Balance : $<span id="balance"></span> </h5>
                     <div class="d-flex  align-items-center  ">
                         <p class="col-lg-1 ">Save : </p>
-                        <input class="col-lg-5" type="text">
+                        <input id="saving-Input" class="col-lg-5" type="text">
                         <p class="col-lg-1">%</p>
-                        <button type="button" class="col-lg-5 btn btn-primary btn-sm px-5  ">Save</button>
+                        <button onclick="finalCalculation()" type="button"
+                            class="col-lg-5 btn btn-primary btn-sm px-5  ">Save</button>
                     </div>
-                    <h5 class="text-center">Saving Amount: </h5>
-                    <h5 class="text-center">Remaining Balance:</h5>
+                    <h5 class="text-center">Saving Amount : $<span id="total-saving"></span> </h5>
+                    <h5 class="text-center">Remaining Balance: $<span id="total-Balance"></span></h5>
                 </div>
             </div>
         </div>
