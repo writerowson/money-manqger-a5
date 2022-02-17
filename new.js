@@ -14,8 +14,13 @@ function sum(food, rent, cloth) {
     return total
 }
 function updateBalance(balance1, balance2) {
-    // if (typeof income != 'number' && typeof expense >= '0') {
-    //     return "please input a valid number"
+    if ((isNaN(balance1) == 'string' && isNaN(balance2) <= '0')) {
+        alert("please input a valid number")
+        location.reload();
+    }
+    // else {
+    //     alert("Please Calculate again")
+    //     location.reload();
     // }
     let result = Number(balance1) - Number(balance2)
     return result;
@@ -29,9 +34,7 @@ function calculation() {
 }
 // Saving & Balance
 let savingPercentage = document.getElementById('saving-Input');
-
 let savingAmount = document.getElementById("total-saving");
-
 let remainingBalanceOutput = document.getElementById("total-Balance")
 
 function saving(incomeAmount, savingPercentage) {
