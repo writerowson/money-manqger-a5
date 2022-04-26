@@ -12,11 +12,12 @@
 </head>
 
 <body>
-    <main class="container mt-5 mb-5">
+    <main class="container  mt-5 mb-5">
         <h1 class="text-center text-primary mb-5">Money Manager</h1>
-        <div class="row d-flex m-auto">
-            <div class="col-lg-6 col-sm-12 d-flex ">
-                <img src="images/income.png" alt="">
+
+        <div class="row  m-auto">
+            <div class="col-lg-6 col-sm-12  d-flex  mb-sm -3 ">
+                <img src="images/finance.jpg.png" width="540px" height="" alt="">
             </div>
             <div class="col-lg-6 col-sm-12  border bg-secondary bg-opacity-10 ">
                 <h5 class="text-center mt-3">Income</h5>
@@ -44,19 +45,23 @@
                     <h5 class="text-center">Tolal Expenses : $<span id="total-expenses"></span> </h5>
                     <h5 class="text-center">Balance : $<span id="balance"></span> </h5>
                     <div class="d-flex  align-items-center ">
-                        <p class="col-lg-1 col-1 ">Save : </p>
-                        <input id="saving-Input" class="col-lg-5 col-5" type="text">
-                        <p class="col-lg-1 col-1">%</p>
-                        <button onclick="finalCalculation()" type="button"
-                            class="col-lg-5 col-5 btn btn-primary btn-sm px-5 ">Save</button>
+
+                        <span class="input-group-text">Save :</span>
+                        <input id="saving-Input" type="text" class="form-control"
+                            aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">%</span>
+                        <button onclick="finalCalculation()" class="btn btn-primary" type="button">Save</button>
+
                     </div>
                     <h5 class="text-center">Saving Amount : $<span id="total-saving"></span> </h5>
                     <h5 class="text-center">Remaining Balance: $<span id="total-Balance"></span></h5>
                 </div>
             </div>
         </div>
+
     </main>
     <script src="new.js"></script>
+    <!-- <script src="borsa.js"></script> -->
 </body>
 
 </html>

@@ -10,25 +10,32 @@ let totalExpenses = document.getElementById("total-expenses")
 let balanceOutput = document.getElementById("balance")
 
 function sum(food, rent, cloth) {
-    let total = Number(food) + Number(rent) + Number(cloth);
-    return total
+
+    if ((isNaN(food)) && isNaN(rent) && isNaN(cloth)) {
+        return alert('Plese put a valid Number')
+    }
+    else {
+        let total = Number(food) + Number(rent) + Number(cloth);
+        return total
+    }
 }
 function updateBalance(balance1, balance2) {
-    if (isNaN(balance1) == 'string') {
-        alert("please input a valid number")
-        location.reload();
+
+    if ((isNaN(balance1)) && isNaN(balance2)) {
+        return alert('Plese put a valid Number')
     }
-    else if (isNaN(balance2 >= balance1)) {
-        alert("Please Calculate again")
-        location.reload();
+    else if (Number(balance2) > Number(balance1)) {
+        return alert("Sorry, You don't have sufficient balance")
     }
-    // else {
-    //     alert("error")
-    //     location.reload();
+    // else if (Number(balance1) < 0 && Number(balance2) < 0) {
+    //     return alert('Plese put a positive Number')
     // }
-    let result = Number(balance1) - Number(balance2)
-    return result;
+    else {
+        let result = Number(balance1) - Number(balance2)
+        return result;
+    }
 }
+
 function calculation() {
     let sumOfExpenses = sum(foodExpenses.value, rentExpenses.value, clothExpenses.value)
     totalExpenses.innerText = sumOfExpenses;
@@ -52,3 +59,4 @@ function finalCalculation() {
     let lastBalance = updateBalance(balanceOutput.innerText, savingAmount.innerText)
     remainingBalanceOutput.innerText = lastBalance
 }
+
